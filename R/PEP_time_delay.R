@@ -5,7 +5,10 @@
 library(tidyverse)
 
 ## Read in data
-human_dat <- read_csv("data/processed_HF_filtered.csv")
+#human_dat <- read_csv("data/processed_HF_filtered.csv")
+human_dat <- readr::read_csv(
+  here("data", "processed_HF_filtered.csv")
+)
 
 ## Select variables required, and only look at first visits, where PEP is Recommended AND PEP is available
 human_dat <- human_dat %>% 
@@ -38,7 +41,10 @@ human_dat_reg <- human_dat_reg %>%
   mutate(mean = paste0(time_delay_mean, " (", lower, "-",upper, ")")) %>% 
   select(REGION, count, mean)
 
-write_csv(human_dat_reg,"outputs/time_delay.csv")
+#write_csv(human_dat_reg,"outputs/time_delay.csv")
+dir.create(here("outputs"), showWarnings = FALSE)
+readr::write_csv(human_dat_reg,here("outputs", "time_delay.csv"))
+
 
 ## Create a binary variable (time delay over two days)
 human_dat <- human_dat %>% 
@@ -76,7 +82,10 @@ print(paste0("This varied by region (Lindi = ",round((human_dat_grp_2[[1,6]])*10
 human_dat_reg <- human_dat_reg %>% 
   mutate(percent_grtr2 = round(human_dat_grp_2$perc_1,2))
 
-write_csv(human_dat_reg,"outputs/time_delay.csv")
+#write_csv(human_dat_reg,"outputs/time_delay.csv")
+dir.create(here("outputs"), showWarnings = FALSE)
+readr::write_csv(human_dat_reg,here("outputs", "time_delay.csv"))
+
 
 ## How does this differ when the animal is known?
 
