@@ -1,3 +1,5 @@
+[![DOI]:(https://doi.org/10.5281/zenodo.18508599)
+
 # Practitioner’s perspectives on access to Rabies Post-Exposure Prophylaxis in Tanzania: A mixed-methods and theoretically-informed study to inform policy and practice
 
 Lushasi K, Rees EM, Barker C, Hoffu H, Changalucha J, Czupryna A, Duamor CT, Ferguson EA, Lankester F, Sikana L, Chng NR & Hampson K (2026). 
