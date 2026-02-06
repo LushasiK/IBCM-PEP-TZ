@@ -1,4 +1,4 @@
-[![DOI]:(https://doi.org/10.5281/zenodo.18508599)
+<a href="https://doi.org/10.5281/zenodo.18508599"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18508654.svg" alt="DOI"></a>
 
 # Practitioner’s perspectives on access to Rabies Post-Exposure Prophylaxis in Tanzania: A mixed-methods and theoretically-informed study to inform policy and practice
 
